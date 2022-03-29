@@ -2,7 +2,7 @@
 title = "Re128 | Karzok"
 
 #base_url = "http://localhost:8080"
-base_url = "/karzok"
+base_url = "https://karzok.re128.org"
 theme = "karzok"
 
 default_language = "en"

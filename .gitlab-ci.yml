@@ -35,8 +35,7 @@ pages:
   stage: deploy
   script:
     - apk add zola
-    - mkdir -p public
-    - zola build -o public/karzok
+    - zola build -o public
   artifacts:
     paths:
       - public/
