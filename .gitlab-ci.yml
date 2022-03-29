@@ -1,0 +1,42 @@
+image: alpine:edge
+stages:
+  - prepare
+  - build
+  - deploy
+
+before_script:
+  - apk update
+
+clone:
+  stage: prepare
+  script:
+    - apk add git
+    - git clone --single-branch -b develop https://github.com/kogeletey/karzok themes/karzok
+    - cd themes/karzok && git checkout tags/`git describe --tags --abbrev=0`
+  artifacts:
+    paths:
+      - themes/karzok
+    expire_in: 1 hour
+
+build/helpers:
+  stage: build
+  script:
+    - apk add npm
+    - cd themes/karzok
+    - npm ci
+    - npm run compile:js
+    - npm run link:assets
+  artifacts:
+    paths:
+      - themes/karzok
+    expire_in: 1 hour
+
+pages:
+  stage: deploy
+  script:
+    - apk add zola
+    - mkdir -p public
+    - zola build -o public/karzok
+  artifacts:
+    paths:
+      - public/
