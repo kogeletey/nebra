@@ -9,9 +9,6 @@ pages:
     - mv /www/public public
   only:
    - develop
-  environment:
-    name: production
-    url: https://karzok.re128.org
-#  artifacts:
-#    paths:
-#      - public/
+  artifacts:
+    paths:
+      - public/
