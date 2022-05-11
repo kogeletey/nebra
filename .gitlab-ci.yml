@@ -1,4 +1,4 @@
-image: ghcr.io/kogeletey/karzok:bdf09c75cc235222f2666de4f69145f8b5b5dd7f
+image: ghcr.io/kogeletey/karzok
 
 pages:
   script:

@@ -3,6 +3,16 @@ title = "Changelog"
 weight = 4
 +++
 
+# [0.2.3]
+
+## New features
+- created a container image for the theme and is available `ghcr.io/kogeletey/karzok`
+
+## Maintenance
+- began to shift the topic to a paradigm classless
+- new url for demonstration theme [karzok](https://karzok.re128.org)
+
+
 # [0.2.2]
 
 ## New features
