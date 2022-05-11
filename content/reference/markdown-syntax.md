@@ -166,9 +166,10 @@ $$
 
 ## Images
 
-![Meta Image Backgorund](../mt-media/bg1.jpg) ![Another Media]()
+![Image Backgorund](/test.png) 
+![Another Media]()
 
-![Media CDN](https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+![Media CDN](https://plchldr.co/i/1280x720?bg=2ecc40)
 
 {% hint style="warning" %} 123 {% endhint %}
 

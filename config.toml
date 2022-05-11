@@ -4,6 +4,7 @@ title = "Re128 | Karzok"
 #base_url = "http://localhost:8080"
 base_url = "https://karzok.re128.org"
 theme = "karzok"
+description = "The theme for launching fast documentation sites"
 
 default_language = "en"
 
@@ -52,8 +53,8 @@ show_reading_time = true
 relative_path = true
 
 [[extra.header_left]]
-text = "Meta"
-link = "$base_url/meta"
+text = "Reference"
+link = "$base_url/reference"
 
 # experiments in container header, disabled
 #[[extra.meta.container]]

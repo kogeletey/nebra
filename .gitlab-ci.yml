@@ -1,9 +1,6 @@
 image: ghcr.io/kogeletey/karzok:bdf09c75cc235222f2666de4f69145f8b5b5dd7f
-stages:
-  - deploy
 
 pages:
-  stage: deploy
   script:
     - sh /www/build.sh
     - mv /www/public public
