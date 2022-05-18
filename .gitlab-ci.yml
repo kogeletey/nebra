@@ -1,4 +1,4 @@
-image: ghcr.io/kogeletey/karzok
+image: alpine:edge
 
 variables:
   GITHUB_REPO: kogeletey/nebra
@@ -16,13 +16,3 @@ mirror:
         - echo "Pushing to git@github.com:${GITHUB_REPO}.git"
         - git push --all git@github.com:${GITHUB_REPO}.git
           #        - git push git@github.com:${GITHUB_REPO}.git --tags
-
-pages:
-  script:
-    - sh /www/build.sh
-    - mv /www/public public
-  only:
-   - develop
-  artifacts:
-    paths:
-      - public/
