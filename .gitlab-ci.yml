@@ -22,7 +22,7 @@ pages:
     - sh /www/build.sh
     - mv /www/public public
   only:
-   - develop
+   - prod
   artifacts:
     paths:
       - public/

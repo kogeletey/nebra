@@ -3,6 +3,13 @@ title = "Changelog"
 weight = 4
 +++
 
+# [0.2.4]
+
+## Maintenance
+- the theme is fully translated into classless css
+- change github workflows to only build
+- redesigned search bar 
+
 # [0.2.3]
 
 ## New features
