@@ -166,12 +166,9 @@ $$
 
 ## Images
 
-![Image Backgorund](/test.png) 
-![Another Media]()
-
+![Image in local directory](/test.png) 
+![Image no loaded testing]()
 ![Media CDN](https://plchldr.co/i/1280x720?bg=2ecc40)
-
-{% hint style="warning" %} 123 {% endhint %}
 
 [^1]:
     The above quote is excerpted from Rob Pike's
