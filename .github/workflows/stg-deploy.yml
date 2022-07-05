@@ -20,7 +20,7 @@ jobs:
       uses: shalzz/zola-deploy-action@master
       env:
        BUILD_DIR: src
-       BUILD_FLAGS: --base-url /
+       BUILD_FLAGS: --base-url https://karzok.stg.re128.org
        PAGES_BRANCH: gh-pages
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
