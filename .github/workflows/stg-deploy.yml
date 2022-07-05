@@ -16,6 +16,12 @@ jobs:
          git clone https://github.com/kogeletey/karzok.git src
          mkdir -p src/static
          mv CNAME src/static/CNAME
+    - name: compile addition resources
+      run: |
+        cd src
+        npm ci
+        npm run compile:js
+        npm run link:assets
     - name: zola build
       uses: shalzz/zola-deploy-action@master
       env:
