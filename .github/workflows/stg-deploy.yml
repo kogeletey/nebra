@@ -14,10 +14,13 @@ jobs:
     - name: clone a theme repo
       run: |
          git clone https://github.com/kogeletey/karzok.git src
+         mkdir -p src/static
+         mv CNAME src/static/CNAME
     - name: zola build
       uses: shalzz/zola-deploy-action@master
       env:
        BUILD_DIR: src
+       BUILD_FLAGS: --base-url="/"
        PAGES_BRANCH: gh-pages
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
