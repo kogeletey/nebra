@@ -3,6 +3,20 @@ title = "Changelog"
 weight = 4
 +++
 
+# [0.2.5]
+
+## New features
+-  dark mode and auto-mode added
+
+## Maintenance
+- minor changes design in mobile 404 
+- moved to typescript
+- change a little directory structure in sass folder
+- little change design in footnote
+
+## Bug fixing 
+- fixed location of footer
+
 # [0.2.4]
 
 ## Maintenance
