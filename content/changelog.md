@@ -9,6 +9,7 @@ weight = 4
 -  dark mode and auto-mode added
 
 ## Maintenance
+- temporal deprecation taxonomies
 - minor changes design in mobile 404 
 - moved to typescript
 - change a little directory structure in sass folder
