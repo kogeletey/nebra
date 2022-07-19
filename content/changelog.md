@@ -6,7 +6,7 @@ weight = 4
 # [0.2.6]
 
 ## New features
-- hint shortcode [reference/markdown-syntax#hints](reference/markdown-syntax.md#hints)
+- hint shortcode [reference/markdown-syntax#hints](/reference/markdown-syntax.md#hints)
 - anchors for quick page navigation, implementation of [Internal links & deep linking | Zola](https://www.getzola.org/documentation/content/linking/#anchor-insertion)
 - edit the page, the path to content repository is configured with `repo` and branch `repo_branch`
 - added second-level headings for table of contents
