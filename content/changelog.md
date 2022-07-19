@@ -3,6 +3,22 @@ title = "Changelog"
 weight = 4
 +++
 
+# [0.2.6]
+
+## New features
+- hint shortcode [reference/markdown-syntax#hints](reference/markdown-syntax.md#hints)
+- anchors for quick page navigation, implementation of [Internal links & deep linking | Zola](https://www.getzola.org/documentation/content/linking/#anchor-insertion)
+- edit the page, the path to content repository is configured with `repo` and branch `repo_branch`
+- added second-level headings for table of contents
+
+## Maintenance
+- disable search and remove js file
+- adding prefetch for cdnurl
+- improved work with importing scripts using macros
+- page layout switch flex to grid
+- enable updates macros as a default
+
+
 # [0.2.5]
 
 ## New features

@@ -17,7 +17,7 @@ in a Hugo theme.
 
 <!--more-->
 
-# Headings
+## Headings
 
 The following HTML `<h1>`—`<h6>` elements represent six levels of section
 headings. `<h1>` is the highest section level while `<h6>` is the lowest.
@@ -50,7 +50,7 @@ tiustia prat.
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne
 sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-# Blockquotes
+## Blockquotes
 
 The blockquote element represents content that is quoted from another source,
 optionally with a citation which must be within a `footer` or `cite` element,
@@ -66,7 +66,7 @@ and optionally with in-line changes such as annotations and abbreviations.
 > Don't communicate by sharing memory, share memory by communicating.</p> —
 > <cite>Rob Pike[^1]</cite>
 
-# Tables
+## Tables
 
 Tables aren't part of the core Markdown spec, but Hugo supports supports them
 out-of-the-box.
@@ -82,7 +82,7 @@ out-of-the-box.
 | ------------------------ | -------------------------- | ----------------------------------- | ------ |
 | _italics_                | **bold**                   | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code` |
 
-# Code Blocks
+## Code Blocks
 
 #### Code block with backticks
 
@@ -99,7 +99,7 @@ out-of-the-box.
 </html>
 ```
 
-#### Code block indented with four spaces
+##### Code block indented with four spaces
 
     <!DOCTYPE html>
     <html lang="en">
@@ -112,27 +112,27 @@ out-of-the-box.
     </body>
     </html>
 
-# List Types
+## List Types
 
-#### Ordered List
+##### Ordered List
 
 1. First item
 2. Second item
 3. Third item
 
-#### Unordered List
+##### Unordered List
 
 - List item
 - Another item
 - And another item
 
-#### Nested list
+##### Nested list
 
 - Item
   1. First Sub-item
   2. Second Sub-item
 
-# Other Elements — abbr, sub, sup, kbd, mark
+## Other Elements — abbr, sub, sup, kbd, mark
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
@@ -145,7 +145,7 @@ Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and
 other small creatures.
 
-# Katex
+## Katex
 
 $$
 f(x) = \int\_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
@@ -162,9 +162,9 @@ $$
 1\% \\ x 
 {%end %}
 
-# Media
+## Media
 
-## Images
+### Images
 
 ![Image in local directory](/test.png) 
 ![Image no loaded testing]()
@@ -174,3 +174,20 @@ $$
     The above quote is excerpted from Rob Pike's
     [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest,
     November 18, 2015.
+
+## Hints
+
+{% hint() %}
+Regular note highlighted in blue
+{% end %}
+
+{% hint(style="warning") %} 
+Caution! Doors are closed!
+This type is for such notes
+{% end %}
+
+{% hint(style="critical") %} 
+This note is about danger to life or the use of this thing in the project
+For example, it can cause non-standart behavior
+{% end %}
+

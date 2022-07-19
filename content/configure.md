@@ -14,10 +14,11 @@ weight = 2
 6. `show_reading_time`- allowing you to show reading time
 7. `children`- for header nesting to work
 8. `[[extra.menu]]` - the main navigation on the site
-9. `[[extra.header_right]]`,`[[extra.header_left]]` - the header navigantion for the site
+9. `[[extra.header_right]]`,`[[extra.header_left]]` - the header navigation for the site
 10. `theme_color` which allow tab coloring in safari
 11. `relative_path` which prints in full url on the page
 12. `devmode` activate experimental features
+13. `repo` and `repo_branch` repository and branch where it content is stored (available since v0.2.6)
 
 ## Templates
 
