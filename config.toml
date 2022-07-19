@@ -1,7 +1,6 @@
 # Change to you title
 title = "Re128 | Karzok"
 
-#base_url = "http://localhost:8080"
 base_url = "https://karzok.re128.org"
 theme = "karzok"
 description = "The theme for launching fast documentation sites"
@@ -11,8 +10,6 @@ default_language = "en"
 build_search_index = true
 
 minify_html = true
-
-#hard_link_static = true
 
 compile_sass = true
 
@@ -40,10 +37,7 @@ version = "https://api.github.com/repos/kogeletey/karzok/releases/latest"
 #cdnurl = "https://get.re128.net/"
 
 # special parameter for develop
-#assets_url = "https://get.re128.net/_/karzok"
 #devmode = true
-
-#localcdn = true
 
 show_word_count = true
 show_reading_time = true
