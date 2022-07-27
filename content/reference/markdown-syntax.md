@@ -6,6 +6,7 @@ weight = 2
 
 [extra]
 math = true
+diagrams = true
 authors = ["Konrad Geletey","Hugo Authors"]
 +++
 
@@ -156,6 +157,13 @@ x_3
 \%
 $$
 
+**katex shortocde**
+
+```jinja
+{% katex(block=true) %}
+{%end %}
+```
+
 {% katex(block=true) %}
 1\% \\ x 
 {%end %}
@@ -168,24 +176,60 @@ $$
 ![Image no loaded testing]()
 ![Media CDN](https://plchldr.co/i/1280x720?bg=2ecc40)
 
-[^1]:
-    The above quote is excerpted from Rob Pike's
-    [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest,
-    November 18, 2015.
-
 ## Hints
+
+**default**
+
+```jinja
+{% hint(style="") %} 
+{% end %}
+```
 
 {% hint() %}
 Regular note highlighted in blue
 {% end %}
+
+**warning**
+
+```jinja
+{% hint(style="warning") %} 
+{% end %}
+```
 
 {% hint(style="warning") %} 
 Caution! Doors are closed!
 This type is for such notes
 {% end %}
 
+**critical**
+```jinja
+{% hint(style="critical") %} 
+{% end %}
+```
+
 {% hint(style="critical") %} 
 This note is about danger to life or the use of this thing in the project
 For example, it can cause non-standart behavior
 {% end %}
 
+## Mermaid
+
+{% hint(style="warning") %} 
+It's a fairly large library ~ 1 MB js files, therefore it will slow down the site, we recommend using the diagram tools on the local machine, and upload images
+{% end %}
+
+```jinja
+{% mermaid() %}
+{% end %}
+```
+
+{% mermaid() %}
+flowchart TD
+  Start --> Stop
+{% end %}
+
+
+[^1]:
+The above quote is excerpted from Rob Pike's
+[talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest,
+November 18, 2015.

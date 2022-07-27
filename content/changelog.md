@@ -3,10 +3,22 @@ title = "Changelog"
 weight = 4
 +++
 
+# [0.2.7]
+
+## New features
+- diagrams [reference/markdown-syntax#mermaid](@/reference/markdown-syntax.md#mermaid) with shortocode using [mermaid](https://mermaid-js.github.io/mermaid/#/)
+- resize images, implementation of [Image processing | Zola](https://www.getzola.org/documentation/content/image-processing/)
+
+## Maintenance
+- minor changes in mobile page, fixed header and nav for open menu
+- remove script for fetch releases and change to zola load data
+- improve code blocks
+
+
 # [0.2.6]
 
 ## New features
-- hint shortcode [reference/markdown-syntax#hints](/reference/markdown-syntax.md#hints)
+- hint shortcode [reference/markdown-syntax#hints](@/reference/markdown-syntax.md#hints)
 - anchors for quick page navigation, implementation of [Internal links & deep linking | Zola](https://www.getzola.org/documentation/content/linking/#anchor-insertion)
 - edit the page, the path to content repository is configured with `repo` and branch `repo_branch`
 - added second-level headings for table of contents

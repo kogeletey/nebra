@@ -7,7 +7,7 @@ description = "The theme for launching fast documentation sites"
 
 default_language = "en"
 
-build_search_index = true
+#build_search_index = true
 
 minify_html = true
 
@@ -33,11 +33,6 @@ header.name = "Karzok"
 # github
 version = "https://api.github.com/repos/kogeletey/karzok/releases/latest"
 
-# change default cdn
-#cdnurl = "https://get.re128.net/"
-
-# special parameter for develop
-#devmode = true
 
 show_word_count = true
 show_reading_time = true
