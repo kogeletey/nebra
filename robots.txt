@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://karzok.stg.re128.org/sitemap.xml
