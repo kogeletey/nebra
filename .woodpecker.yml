@@ -18,5 +18,4 @@ pipeline:
       - git commit -m "build from https://codeberg.org/kogeletey/siren/commit/${CI_COMMIT_SHA}"
       - git push -f -u origin prod-env
     when:
-      event: push
       branch: release
