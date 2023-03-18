@@ -1,6 +1,6 @@
 pipeline:
   prod-env:
-    image: ghcr.io/kogeletey/karzok:0.2.9
+    image: ghcr.io/kogeletey/karzok
     environment:
       - REPO_TO_DEPLOY=kogeletey/www-cache
     secrets: [mail, codeberg_token]
@@ -11,11 +11,11 @@ pipeline:
       - cd /www/public
       - git config --global user.email $MAIL
       - git config --global user.name "pages-bot"
-      - git config --global init.defaultBranch prod-env
+      - git config --global init.defaultBranch "prod-env"
       - git init
       - git add .
       - git remote add origin https://$CODEBERG_TOKEN@codeberg.org/$REPO_TO_DEPLOY.git
       - git commit -m "build from https://codeberg.org/kogeletey/siren/commit/${CI_COMMIT_SHA}"
-      - git push -f -u origin prod-env
+      - git push -f -u origin "prod-env"
     when:
       branch: release
